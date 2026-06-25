@@ -1,2 +1,3 @@
 import numpy as np 
-print(np.e)
+def squared(x):
+    return x**2
