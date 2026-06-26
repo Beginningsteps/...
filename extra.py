@@ -4,4 +4,4 @@ import random as rand
 from python import lattice
 
 
-print(lattice(6))
+print(lattice(9))

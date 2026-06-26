@@ -15,7 +15,7 @@ def lattice(size):
                 lattice[i][j] = 1
     return lattice
 
-if __name__ == '__main__':
+if __name__ == '__main__':#Can use function in different files.
     main()
 
 
