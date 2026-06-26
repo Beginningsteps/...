@@ -13,7 +13,7 @@ def sweeps(size, B,J,n):
     MagnetisationList = []
     Mag = 0
     sweepslist = []
-    for sweep in range(n):
+    for sweep in range(1,n+1):
         sweepslist = sweepslist + [sweep]
 
         for i in range(size):
@@ -31,9 +31,7 @@ def sweeps(size, B,J,n):
         MagnetisationList = MagnetisationList + [Mag]
         
         
-    return givenlattice
-    return MagnetisationList
-    return sweepslist
+    return givenlattice, MagnetisationList , sweepslist
 
 if __name__ == '__main__':
     main()
