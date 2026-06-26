@@ -10,12 +10,12 @@ def array(size):
 def lattice(size):
     lattice = array(size)
     decider = [0,1]
-    for i in (size):
-        for j in (size):
+    for i in range(size):
+        for j in range(size):
             if rand.choice([0,1]) == 0:
                 lattice[i][j] = -1
-                else:
-                    lattice[i][j] = 1
+            else:
+                lattice[i][j] = 1
     return lattice
 print(lattice(5))
 
