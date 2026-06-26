@@ -1,15 +1,11 @@
 import numpy as np
 import random as rand
 def main():
-    lattice(5)
-    print(lattice(5))
+    lattice(8)
 
-
-def array(size):
-    return np.array([[0]*size]*size)
 
 def lattice(size):
-    lattice = array(size)
+    lattice = np.array([[0]*size]*size)
     decider = [0,1]
     for i in range(size):
         for j in range(size):
@@ -18,8 +14,6 @@ def lattice(size):
             else:
                 lattice[i][j] = 1
     return lattice
-
-
 
 if __name__ == '__main__':
     main()
