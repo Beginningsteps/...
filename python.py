@@ -2,6 +2,7 @@ import numpy as np
 import random as rand
 def main():
     lattice(5)
+    print(lattice(5))
 
 
 def array(size):
