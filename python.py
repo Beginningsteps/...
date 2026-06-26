@@ -6,6 +6,8 @@ def squared(x):
 
 def array(size):
     return np.array([[0]*size]*size)
+print(array(5))
+
 
 
 
