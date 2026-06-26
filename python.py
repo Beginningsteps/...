@@ -1,7 +1,7 @@
 import numpy as np
 import random as rand
-def squared(x):
-    return x**2
+def main():
+    lattice(5)
 
 
 def array(size):
@@ -17,7 +17,12 @@ def lattice(size):
             else:
                 lattice[i][j] = 1
     return lattice
-print(lattice(5))
+
+
+
+if __name__ == '__main__':
+    main()
+
 
 
 
