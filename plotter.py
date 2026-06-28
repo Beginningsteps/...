@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt 
 from matplotlib.colors import ListedColormap, BoundaryNorm
 
-from latticechange import sweeps
 basis = sweeps(50, 0.00, 0.95,30)
 xvalues = basis[2]
 yvalues = basis[1]
