@@ -26,7 +26,6 @@ def sweeps(size, B,J,n):
                      givenlattice[i][j] = -givenlattice[i][j]
                 else:
                     givenlattice[i][j] = givenlattice[i][j]
-        Mag = np.mean(givenlattice)
         MagnetisationList = MagnetisationList + [np.mean(givenlattice)]
         
         
