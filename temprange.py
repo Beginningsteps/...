@@ -1,9 +1,10 @@
 import numpy as np
 from lattice import lattice
+import random as rand
 
 
 def main():
-    temprange(1,1,1,1,1,2000)
+    temprange(1,1,1,1,2000)
 
 def temprange(size, B, J, n, largeT):
     Tlist = []
@@ -14,7 +15,7 @@ def temprange(size, B, J, n, largeT):
         for j in range(size):
             for k in range(size):
                 r = rand.random()
-                f = data[j-1][k] + data[j - size +1][k] + data[j][k-1 - 1] + data[i][j - size +1]
+                f = data[j-1][k] + data[j - size +1][k] + data[j][k - 1] + data[j][k - size +1]
                 deltaE =2*(J*f +B)*data[j][k]/(i/1000)
                 if np.e**(-deltaE) > 1:
                      data[j][k] = -data[j][k]
@@ -22,8 +23,8 @@ def temprange(size, B, J, n, largeT):
                      data[j][k] = -data[j][k]
                 else:
                     data[j][k] = data[j][k]
-        MagTList = MagTlist + [np.mean(data)]
-    return TList, MagTList
+        MagTList = MagTList + [np.mean(data)]
+    return Tlist, MagTList
 
 if __name__ == '__main__':
     main()
