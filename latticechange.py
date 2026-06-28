@@ -1,5 +1,5 @@
 import numpy as np
-from python import lattice
+from lattice import lattice
 import random as rand
 
 def main():
