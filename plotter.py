@@ -1,5 +1,6 @@
 from latticechange import sweeps
-import numpy as np 
+import numpy as np
+import numpy 
 import matplotlib.pyplot as plt 
 from matplotlib.colors import ListedColormap, BoundaryNorm
 
